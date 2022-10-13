@@ -35,8 +35,8 @@ export default class Home extends Component {
             <object className="consultar">Consultar</object>
             <object className="separador">|</object>
             <Form.Control className="rectanguloguia" type="email" placeholder="Ingresa el # de guia" />
-            <a href="seguimiento"><Button className="buscar"><img className="path" src="./src/assets/buscar.svg" width="10.23px" height="17.89px"/></Button></a>        
-            <object className="imagen" data="./src/assets/Envios.svg"></object>
+            <a href="seguimiento"><Button className="buscar"><img className="path" src="../assets/buscar.svg" width="10.23px" height="17.89px"/></Button></a>        
+            <object className="imagen" data="../assets/Envios.svg"></object>
           </Row>
         </Container>
       </div>
