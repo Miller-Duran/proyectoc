@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useRef, useEffect } from "react";
-import "../../pages/Seguimiento/Seguimiento.css";
+import "../../pages/Seguimiento/seguimiento.css";
 
 export function Seguimiento() {
   return (
