@@ -49,7 +49,9 @@ color: #000000;
 }
 
 .items_menu:hover {
-    color: #FF7A00 !important; 
+    border-color: #02943f !important;
+    background-color: #02943f !important;
+    color: white; 
 }
 
 .Iniciar_sesion {
@@ -70,7 +72,7 @@ line-height: 24px;
 
 text-align: center;
 
-color: #FF7A00;
+color: #0a0a0a;
 
 }
 
@@ -80,12 +82,12 @@ color: #FF7A00;
 
 
   .btn-iniciarSesion {
-    border-color: #FF7A00;
+    border-color: #080808;
     background-color: transparent !important;
 }
 
 .btn-iniciarSesion:hover {
-    border-color: #FF7A00 !important;
-    background-color: #FF7A00 !important;
+    border-color: #02943f !important;
+    background-color: #02943f !important;
     color: white;
 }

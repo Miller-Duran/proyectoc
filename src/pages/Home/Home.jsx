@@ -31,12 +31,12 @@ export default class Home extends Component {
           <Row className="justify-content-md-center">
             <Col className="rectangulo"></Col>
             <Col className="slogan2">¡Lo tenemos todo!</Col>
-            <object className="rectangulo1guia"></object>
+            {/* <object className="rectangulo1guia"></object>
             <object className="consultar">Consultar</object>
             <object className="separador">|</object>
             <Form.Control className="rectanguloguia" type="email" placeholder="Ingresa el # de guia" />
-            <a href="seguimiento"><Button className="buscar"><img className="path" src="../assets/buscar.svg" width="10.23px" height="17.89px"/></Button></a>        
-            <object className="imagen" data="../assets/Envios.svg"></object>
+            <a href="seguimiento"><Button className="buscar"><img className="path" src="../assets/buscar.svg" width="10.23px" height="17.89px"/></Button></a>         */}
+            {/* <object className="imagen" data="../assets/m.jpeg"></object> */}
           </Row>
         </Container>
       </div>

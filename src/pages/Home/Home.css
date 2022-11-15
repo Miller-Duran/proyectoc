@@ -13,7 +13,7 @@ height: 221px;
 left: 121px;
 top: 286px;
 
-background: #FF7A00;
+background: #fcfbfb;
 
 }
 
@@ -35,7 +35,7 @@ line-height: 48px;
 /* identical to box height, or 120% */
 
 
-color: #525252;
+color: #fdfcfc;
 
 }
 
@@ -57,7 +57,7 @@ line-height: 31px;
 /* or 141% */
 
 
-color: #525252;
+color: #faf9f9;
 
 }
 
@@ -81,7 +81,7 @@ line-height: 31px;
 /* identical to box height, or 135% */
 
 
-color: #525252;
+color: #fffefe;
 
 }
 
@@ -185,7 +185,7 @@ left: 179px;
 top: 555px;
 
 background: #FFFFFF;
-box-shadow: 0px 5px 25px #FF7A00;
+box-shadow: 0px 5px 25px #04bd57;
 border-radius: 38px;
 
 }

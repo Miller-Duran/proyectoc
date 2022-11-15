@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FFE5B1;
+    background-color:  #04bd57;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -17,12 +17,12 @@
     font-weight: bold;
   
     font-size: 20px;
-    color: #383B3D ;
+    color: #f9fbfd ;
     display: block;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #000000;
   }
   
   .main {
@@ -34,7 +34,7 @@
   
   .titulo {
     font-family:Noto Sans;
-    color:#5A5C69;
+    color:#070707;
     font-weight: bolder;
     padding: 20px;
     border-radius: 1rem;
@@ -44,15 +44,50 @@
   
   .parrafo{
     font-family: Noto Sans Tai Le;
-    color:#999DA0 ;
+    color:#fcf8f8 ;
     font-weight: bold;
   
   }
   
   .parrafo2{
     font-family: Noto Sans Tai Le;
-    color:#5A5C69;
+    color:#f6f7fa;
     font-weight: bold;
   
-  }
-  
+  }.b {
+
+    /* Iniciar Sesion */
+    
+    
+    left: 1283px;
+    top: 62px;
+    margin-right: 141px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    
+    color: #0a0a0a;
+    
+    }
+  .btn-buscar {
+    color: #0a0a0a;
+    border-color: #fdfdfd;
+    background-color: transparent !important;
+}
+.h1 {
+  font-family: '';
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 63px;
+  color: #faf9f9;
+ width: 589px;
+    height: 120px;
+    left: 120px;
+    top: 0px;
+}

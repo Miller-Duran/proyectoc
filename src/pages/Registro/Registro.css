@@ -1,5 +1,6 @@
 .frase-registro h2 {
     font-family: 'Roboto Mono';
+    color: #050505;
     font-weight: 400;
     font-size: 48px;
     line-height: 63px;
@@ -12,7 +13,7 @@
 }
 
 .frase-registro h2 span {
-    color: #FF7A00;
+    color: #050505;
 }
 
 .registro-foto{
@@ -20,7 +21,7 @@
 }
 
 .registro-form {
-    background-color: #FFDE9D;
+    background-color: #04bd57;
     border-radius: 20px;
     width: 497px;
     height: 610px;

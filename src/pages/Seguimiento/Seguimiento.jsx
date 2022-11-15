@@ -6,32 +6,37 @@ export function Seguimiento() {
     <Fragment>
       <div className='sidenav'>
         <nav className="nav flex-column">
-          <a href="/"> <img src="logo.svg" alt="logo" id="logo"/></a>
+          {/* <a href="/"> <img src="logo.svg" alt="logo" id="logo"/></a>
           <a className="nav-link active" href="/">Inicio</a>
-          <a className="nav-link" href="registro-paquete">Registrar solicitud</a>
-          <a className="nav-link" href="seguimiento">Seguimiento de solicitud</a>
+          <a className="nav-link" href="registro-paquete">CREAR ORDEN</a>
+          <a className="nav-link" href="seguimiento">ACTUALIZAR ORDEN</a> */}
+
+          <a href=""> <img src="o.png" width="200" height="100" alt="logo" id="logo"/></a>
+          <a className="nav-link" href="registro-paquete">CREAR ORDEN</a>
+          <a className="nav-link" href="seguimiento">ACTUALIZAR ORDEN</a>
+          <a className="nav-link" href="/">CERAR SESION</a>
           </nav>
       </div>
       <div className='main'>
       <blockquote className="blockquote text-center">
 
         <div className='container my-5 pb-3'>
-          <h1>SEGUIMIENTO DE ENVIO</h1>
+          <h1 >ACTUALIZAR ORDEN</h1>
         </div>
         <div className='container py-5 parrafo'>
-          <p>Ingrese en este campo el numero de su solicitud</p>
-          <input type="text" placeholder="Rastrear solicitud..." />
-          <button className="btn btn-primary ms-3">Buscar</button>
+          <p>INGRESE LA ORDEN QUE DESEA ACTUALIZAR</p>
+          <input type="text" placeholder="BUSCAR" />
+          <button className="btn btn-dark ms-3" >Buscar</button>
         </div>
         <div className='container px-auto py-5'>
         <table className="table">
           <thead className="table-active">
             <tr>
-              <th scope='col'>Numero Solicitud</th>
-              <th scope='col'>Fecha de solicitud</th>
-              <th scope='col'>Ciudad Origen</th>
-              <th scope='col'>Ciudad Destino</th>
-              <th scope='col'>Estado</th>
+              <th scope='col' className="fw-normal parrafo2">Numero envio</th>
+              <th scope='col'className="fw-normal parrafo2"> Fecha de Solicitud</th>
+              <th scope='col' className="fw-normal parrafo2">Ciudad Entrega</th>
+              <th scope='col' className="fw-normal parrafo2">Direccion Entrega</th>
+              <th scope='col' className="fw-normal parrafo2">Estado</th>
             </tr>
           </thead>
           <tbody>
@@ -46,8 +51,8 @@ export function Seguimiento() {
         </table>
         </div>
         <div className='container my-5 parrafo'>
-        <p>Su envio esta en proceso de entrega, recuerde que puede cancelar su solicitud hasta 22 horas despues de creada la misma</p>
-        <button className='btn btn-danger'>Cancelar solicitud</button>
+        
+        <button className='btn btn-dark'>ACTUALIZAR</button>
         </div>  
       </blockquote>
     </div>

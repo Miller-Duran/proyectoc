@@ -25,11 +25,17 @@ a:hover {
 }
 
 body {
+  /* background-color:rgb(56, 86, 151); */
+background-image: url('C:\Users\lauri\Downloads\proyectoc\public\s.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+/* position:relative ; */
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex;
+  place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {

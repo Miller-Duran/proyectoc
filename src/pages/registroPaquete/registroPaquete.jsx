@@ -10,10 +10,12 @@ const Formulario = () => {
       {/* <NavBarComp> </NavBarComp> */}
       <div className='sidenav'>
         <nav className="nav flex-column">
-          <a href="/"> <img src="logo.svg" alt="logo" id="logo" /></a>
-          <a className="nav-link active" href="/">Inicio</a>
-          <a className="nav-link" href="registro-paquete">Registrar solicitud</a>
-          <a className="nav-link" href="seguimiento">Seguimiento de solicitud</a>
+          {/* <a href=""> <img src="logo.svg" alt="logo" id="logo" /></a> */}
+          {/* <a className="nav-link active" href="/">Inicio</a> */}
+          <a href=""> <img src="o.png" width="200" height="100" alt="logo" id="logo"/></a>
+          <a className="nav-link" href="registro-paquete">CREAR ORDEN</a>
+          <a className="nav-link" href="seguimiento">ATUALIZAR ORDEN</a>
+          <a className="nav-link" href="/">CERRAR SESION</a>
         </nav>
       </div>
       <div className="main">
@@ -21,7 +23,7 @@ const Formulario = () => {
           {" "}
           <div className="Cabecera d-flex justify-content-center">
             {" "}
-            <h1 className="mt-3"> REGISTRO DE PAQUETE </h1>{" "}
+            <h1 className="h1 mt-3"> CREAR ORDEN</h1>{" "}
           </div>{" "}
         </header>
         <div className="cuadro"> </div>
@@ -51,11 +53,18 @@ const Formulario = () => {
             {({ errors }) => (
               <Form className="formulario">
                 <form>
-                  <label>
-                    <h4> Ingrese descripcion del paquete: </h4>
+                  {/* <label> */}
+                    {/* <h4> Ingrese descripcion del paquete: </h4> */}
                     {/* <input type="text" name="name" /> */}
-                    <textarea name="name"  cols="10" rows="3"></textarea>
-                  </label>
+                    {/* <textarea name="name"  cols="10" rows="3"></textarea> */}
+                  <label for="start">Seleccione fecha:</label>
+                  <input type="date" id="start" name="trip-start"
+                  value="2018-07-22"
+                  min="2018-01-01" max="2018-12-31"></input>
+
+                  <label for="start">Seleccione hora:</label>
+                  <input type="time" name="hora" min="18:00" max="21:00" step="3600" />
+                  {/* </label> */}
                 </form>
                 <div>
                   <div className="enunciados">
@@ -80,89 +89,7 @@ const Formulario = () => {
                     )}
                   />
                 </div>
-                <div>
-                  <div className="enunciados">
-                    {" "}
-                    <label htmlFor="ciudadPartida">Ciudad de Partida</label>{" "}
-                  </div>
-                  <div className="campos">
-                    {" "}
-                    <Field
-                      type="text"
-                      id="ciudadPartida"
-                      name="ciudadPartida"
-                      placeholder="Bogota"
-                    />{" "}
-                  </div>
-                  <ErrorMessage
-                    name="ciudadPartida"
-                    component={() => (
-                      <div className="error">{errors.ciudadPartida}</div>
-                    )}
-                  />
-                </div>
-                <div>
-                  <div className="enunciados">
-                    {" "}
-                    <label htmlFor="ciudadDestino">Ciudad de destino</label>{" "}
-                  </div>
-                  <div className="campos">
-                    <Field
-                      type="text"
-                      id="ciudadDestino"
-                      name="ciudadDestino"
-                      placeholder="Tunja"
-                    />{" "}
-                  </div>
-                  <ErrorMessage
-                    name="ciudadDestino"
-                    component={() => (
-                      <div className="error">{errors.ciudadDestino}</div>
-                    )}
-                  />
-                </div>
-                <div>
-                  <div className="enunciados">
-                    {" "}
-                    <label htmlFor="remitente">Remitente</label>{" "}
-                  </div>
-                  <div className="campos">
-                    <Field
-                      type="text"
-                      id="remitente"
-                      name="remitente"
-                      placeholder="Pancracia Tocarruncho"
-                    />{" "}
-                  </div>
-                  <ErrorMessage
-                    name="remitente"
-                    component={() => (
-                      <div className="error">{errors.remitente}</div>
-                    )}
-                  />
-                </div>
-                <div>
-                  <div className="enunciados">
-                    {" "}
-                    <label htmlFor="direccionRecibe">
-                      Direccion de recibo
-                    </label>{" "}
-                  </div>
-                  <div className="campos">
-                    <Field
-                      type="text"
-                      id="direccionRecibe"
-                      name="direccionRecibe"
-                      placeholder="fake street 123"
-                    />{" "}
-                  </div>
-                  <ErrorMessage
-                    name="direccionRecibe"
-                    component={() => (
-                      <div className="error">{errors.direccionRecibe}</div>
-                    )}
-                  />
-                </div>
+
                 <div>
                   <div className="enunciados">
                     {" "}
@@ -184,16 +111,158 @@ const Formulario = () => {
                     )}
                   />
                 </div>
+
+
+
+
+
+
                 <div>
-                  <label htmlFor="EnvioRapido">
+                  <div className="enunciados">
+                    {" "}
+                    <label htmlFor="ciudadPartida">Direccion de Recogida</label>{" "}
+                  </div>
+                  <div className="campos">
+                    {" "}
+                    <Field
+                      type="text"
+                      id="ciudadPartida"
+                      name="ciudadPartida"
+                      placeholder="mz i casa 89997"
+                    />{" "}
+                  </div>
+                  <ErrorMessage
+                    name="ciudadPartida"
+                    component={() => (
+                      <div className="error">{errors.ciudadPartida}</div>
+                    )}
+                  />
+                </div>
+                <div>
+                  <div className="enunciados">
+                    {" "}
+                    <label htmlFor="ciudadDestino">Ciudad de Recogida</label>{" "}
+                  </div>
+                  <div className="campos">
+                    <Field
+                      type="text"
+                      id="ciudadDestino"
+                      name="ciudadDestino"
+                      placeholder="Tunja"
+                    />{" "}
+                  </div>
+                  <ErrorMessage
+                    name="ciudadDestino"
+                    component={() => (
+                      <div className="error">{errors.ciudadDestino}</div>
+                    )}
+                  />
+                </div>
+                <div>
+                  <div className="enunciados">
+                    {" "}
+                    <label htmlFor="remitente">Nombre Destinatario</label>{" "}
+                  </div>
+                  <div className="campos">
+                    <Field
+                      type="text"
+                      id="remitente"
+                      name="remitente"
+                      placeholder="Pancracia Tocarruncho"
+                    />{" "}
+                  </div>
+                  <ErrorMessage
+                    name="remitente"
+                    component={() => (
+                      <div className="error">{errors.remitente}</div>
+                    )}
+                  />
+                </div>
+
+
+                <div>
+                  <div className="enunciados">
+                    {" "}
+                    <label htmlFor="remitente">Cedula Destinatario</label>{" "}
+                  </div>
+                  <div className="campos">
+                    <Field
+                      type="text"
+                      id="remitente"
+                      name="remitente"
+                      placeholder="12323233"
+                    />{" "}
+                  </div>
+                  <ErrorMessage
+                    name="remitente"
+                    component={() => (
+                      <div className="error">{errors.remitente}</div>
+                    )}
+                  />
+                </div>
+
+
+                <div>
+                  <div className="enunciados">
+                    {" "}
+                    <label htmlFor="direccionRecibe">
+                      Direccion de Entrega
+                    </label>{" "}
+                  </div>
+                  <div className="campos">
+                    <Field
+                      type="text"
+                      id="direccionRecibe"
+                      name="direccionRecibe"
+                      placeholder="fake street 123"
+                    />{" "}
+                  </div>
+                  <ErrorMessage
+                    name="direccionRecibe"
+                    component={() => (
+                      <div className="error">{errors.direccionRecibe}</div>
+                    )}
+                  />
+                </div>
+
+                <div>
+                  <div className="enunciados">
+                    {" "}
+                    <label htmlFor="direccionRecibe">
+                      Ciudad de Entrega
+                    </label>{" "}
+                  </div>
+                  <div className="campos">
+                    <Field
+                      type="text"
+                      id="direccionRecibe"
+                      name="direccionRecibe"
+                      placeholder="Bucaramanga"
+                    />{" "}
+                  </div>
+                  <ErrorMessage
+                    name="direccionRecibe"
+                    component={() => (
+                      <div className="error">{errors.direccionRecibe}</div>
+                    )}
+                  />
+                </div>
+
+
+
+               
+                {/* <div>
+                  <label htmlFor="EnvioRapido" >
+                    
                     {" "}
                     Envio Rapido
                     <Field type="radio" name="envioRapido" value="Si" /> Si
                     <Field type="radio" name="envioRapido" value="No" /> No
                   </label>
+                </div> */}
+                <div class="contenedor">
+               <button class="centrado" className='btn btn-dark'>crear</button>
                 </div>
-
-                <button type="submit">Enviar</button>
                 {formularioEnviado && (
                   <p className="exito">Formulario enviado con exito!</p>
                 )}
